@@ -1,15 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
-
-const NotFoundPage = () => {
+const GapPage = () => {
   return (
     <main>
-      <h1>404</h1>
+      <h1>Gap</h1>
     </main>
   )
 }
 
-export default NotFoundPage
+export default GapPage
 
 export const Head = () => <title>Not found</title>
