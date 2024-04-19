@@ -12,10 +12,12 @@ import Success from "../components/Success"
 const IndexPage = () => {
   return (
     <main >
-      <Landing/>
-      <About/>
-      <Skills/>
-      <Projects/>
+      <Layout>
+        <Landing/>
+        <About/>
+        <Skills/>
+        <Projects/>
+      </Layout>
     </main>
   )
 }
