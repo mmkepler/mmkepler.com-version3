@@ -1,14 +1,30 @@
 #footer {
   display: flex;
-  flex: 1;
-  padding: 1rem 0 0 0;
+  padding: 0;
   margin-top: 60px;
   margin-left: 0;
   margin-right: 0;
   justify-content: center;
   align-items: center;
   background-color: black;
-  flex-shrink: 0;
-  max-height: 80px;
+  height: 65px;
   width: 100%;
+}
+
+#bluesky {
+ 
+}
+#github {
+  
+}
+
+.social-icon, #copyright {
+  margin: auto 20px;
+}
+
+#social-icons-footer {
+  display: flex;
+  flex-direction: row;
+  
+  
 }
