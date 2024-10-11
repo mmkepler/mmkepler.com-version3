@@ -1,12 +1,10 @@
 import React from 'react'
 import "../styles/layout.css"
-import Footer from "./Footer"
 
 export default function Layout({children}) {
   return (
-      <div>
+      <div id="layout">
         {children}
-        <Footer/>
       </div>
     )
 }

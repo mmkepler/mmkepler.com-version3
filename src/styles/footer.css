@@ -1,0 +1,14 @@
+#footer {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0 0 0;
+  margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-shrink: 0;
+  max-height: 80px;
+  width: 100%;
+}

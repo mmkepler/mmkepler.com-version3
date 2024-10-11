@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/success.js"
+import "../styles/success.css"
 
 export default function 
 () {
