@@ -1,8 +1,124 @@
-.header {
+.nav {
+  padding: 10px 40px;
+  margin: 0 auto;
   width: 100%;
+  background-color: black;
+  box-shadow: -1px 2px 5px #009799;
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
-  min-height: 70px;
-  background-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  /*border-image: linear-gradient(45deg, #009799, white, #009799) 1;*/
+  /*animation: pulse 4s ease infinite alternate;*/
+  color: white;
+  line-height: normal;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+
+.hamburger {
+  width: 40px;
+  background-color: #00c3c6;
+  height: 6px;
+  margin: 3px;
+  background-color: none;
+  border-radius: 4px  0 4px 0;
+}
+
+.items {
+  width: 70px;
+  font-size: 1.2em;
+  padding-top: 10px;
+  background: url("../images/logo2.png") center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 2;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  list-style-type: none;
+}
+
+.items:nth-child(1) {
+ padding-top: 0;
+}
+
+
+
+.resume {
+  text-decoration: none;
+  color: white;
+}
+
+.item {
+  margin-top:8px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  min-width: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: none;
+  width: 0px;
+  height: 0px;
+  margin: 0 -40;
+  padding: 0;
+}
+
+.toggle {
+  display: none;
+  width: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px){
+  .toggle {
+    display: block;
+    width: 40px;
+  }
+ .items {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    visibility: visible;
+    margin-top:8px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+@keyframes pulse {
+  0% {
+    border-image: linear-gradient(45deg, 009799, #009799, white, #009799, #009799) 1;
+  }
+  25% {
+    border-image: linear-gradient(45deg, #009799, white, #009799, white, #009799,) 1;
+  }
+  50% {
+    border-image: linear-gradient(45deg,  white, #009799, #009799,  #009799, white) 1;
+  }
+  75% {
+    border-image: linear-gradient(45deg,  #009799, white, #009799, white,  #009799) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, #009799, #009799, white, #009799, #009799) 1;
+  }
+}*/

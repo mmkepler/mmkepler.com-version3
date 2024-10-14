@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as styles from "../styles/main.module.css"
 import * as sectionStyles from "../styles/sections.module.css"
+import Menu from "../components/Menu"
 import Layout from "../components/Layout"
 import About from "../components/About"
 import Failure from "../components/Failure"
@@ -41,10 +42,20 @@ const IndexPage = () => {
       setProjects({...showProjects, two: true});
     } 
   }
+
+  //toggle hamburger menu
+  const toggleMenu = (e) => {
+    e.preventDefault();
+    let buttonMenu = document.getElementsByClassName("item");
+    // console.log("toggle", buttonMenu);
+    buttonMenu.ariaExpanded = !menuState;
+    setMenuState(!menuState);
+  }
   
   return (
     <main id="main" className={styles.main}>
-      <Header/>
+      <Header onClick={(e) => toggleMenu(e)}/>
+      {menuState ? <Menu onClick={(e) => toggleMenu(e)} /> : ""}
       <Layout>
         <Landing/>
         <About/>
