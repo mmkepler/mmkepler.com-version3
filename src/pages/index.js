@@ -101,7 +101,7 @@ const IndexPage = () => {
          <div className={sectionStyles.holder}>
         <span className={sectionStyles.spanleft}></span><h2 className={sectionStyles.title}>Contact</h2><span className={sectionStyles.spanright}></span>
         </div>
-
+        <div className={sectionStyles.contactWrapper}>
         <div className={sectionStyles.section} >
             <div className={styles.space}>
             <div className={sectionStyles.spacer}>
@@ -180,6 +180,7 @@ const IndexPage = () => {
            }
           </div>
           </div>
+        </div>
         </div>
 
         </section>

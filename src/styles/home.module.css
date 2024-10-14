@@ -1,6 +1,6 @@
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -65,10 +65,13 @@
 }
 
 /*Contact specific rules*/
+
+
 .space {
   background: url("../images/starBG.jpg") no-repeat center;
   background-size: cover;
   color: white;
+  padding: 20px 0;
 }
 
 .emailInput, .nameInput, .messageInput {

@@ -13,7 +13,7 @@
   box-shadow: 3px -1px 6px #009799, -3px 1px 6px #009799;
 }
 
-section .section:nth-last-of-type(1) {
+.contactWrapper .section {
   padding: 0;
 }
 
