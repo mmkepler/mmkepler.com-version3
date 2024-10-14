@@ -1,8 +1,10 @@
 import React from 'react'
-import "../styles/resume.css"
+import * as resumeStyles from "../styles/resume.module.css"
 
 export default function Resume() {
   return (
-    <div>Resume</div>
+    <div className={resumeStyles.resume}>
+      Resume
+    </div>
   )
 }

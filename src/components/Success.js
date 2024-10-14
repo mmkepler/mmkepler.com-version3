@@ -1,11 +1,11 @@
 import React from 'react'
-import "../styles/success.css"
+import * as successStyles from "../styles/success.module.css"
 
 export default function 
 () {
   return (
-    <div>
-      
+    <div id="success" className={successStyles.success}>
+      success
     </div>
   )
 }

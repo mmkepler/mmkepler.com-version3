@@ -1,8 +1,10 @@
 import React from 'react'
-import "../styles/menu.css"
+import * as menuStyles from "../styles/menu.module.css"
 
 export default function Menu() {
   return (
-    <div>Menu</div>
+    <div className={menuStyles.menu}>
+      Menu
+    </div>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
-import "../styles/failure.css"
+import * as failureStyles from "../styles/failure.module.css"
 
 export default function Failure() {
   return (
-    <div>Failure</div>
+    <div className={failureStyles.failure}>
+      Failure
+    </div>
   )
 }

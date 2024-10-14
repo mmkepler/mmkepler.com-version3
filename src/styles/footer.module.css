@@ -1,4 +1,4 @@
-#footer {
+.footer {
   display: flex;
   padding: 0;
   margin-top: 60px;
@@ -11,20 +11,19 @@
   width: 100%;
 }
 
-#bluesky {
- 
-}
-#github {
-  
+.socialIcon img{
+  height: 32px;
 }
 
-.social-icon, #copyright {
+.socialIcon, .copyright {
   margin: auto 20px;
 }
 
-#social-icons-footer {
+
+.socialIconsFooter {
   display: flex;
   flex-direction: row;
-  
+
+ 
   
 }

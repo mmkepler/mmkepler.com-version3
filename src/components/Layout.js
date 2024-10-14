@@ -1,9 +1,9 @@
 import React from 'react'
-import "../styles/layout.css"
+import * as layoutStyles from"../styles/layout.module.css"
 
 export default function Layout({children}) {
   return (
-      <div id="layout">
+      <div id="layout" className={layoutStyles.layout}>
         {children}
       </div>
     )

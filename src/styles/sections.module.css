@@ -1,0 +1,235 @@
+/* All sections*/
+.section {
+  background-color: white;
+  color: black;
+  min-width: 300px;
+  max-width: 732px;
+  padding: 40px 40px;
+  margin: 0 auto 20px auto;
+  border: 4px solid #009799;
+  border-image: linear-gradient(45deg, #009799, white, #009799) 1;
+  /*animation: pulse 4s ease infinite alternate;*/
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px -1px 6px #009799, -3px 1px 6px #009799;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.skilltTitles {
+  text-align: center;
+}
+
+.holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.spanleft {
+  width: 50px;
+  height: 30px;
+  border-bottom: 8px double #009799;
+  border-radius: 0 10px;
+  margin-top: 32px;
+  margin-right: 10px;
+}
+
+.spanright {
+  width: 50px;
+  height: 30px;
+  border-bottom: 8px double #009799;
+  border-radius: 10px 0;
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+/* Skills */
+
+.skills {
+  width: 100%;
+  
+}
+
+.skillsBullet {
+  width: 10px;
+  height: 9px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.skillsWrapper ul {
+ min-width: 224px;
+}
+
+
+.listItems {
+  list-style-image: url("../images/bullet.png");
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+  .columns {
+    display: block;
+  }
+}
+
+/* Projects */
+
+
+.divider {
+  border-left: 1px dotted #009799;
+  border-right: 1px dotted #009799;
+}
+
+.projectsTitle {
+  margin: 0 6px;
+  padding: 0;
+}
+
+.cardSpacer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+ 
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cardMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #009799;
+  width: 200px;
+  min-height: 250px;
+  background: rgb(0,151,153);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,151,153,1) 100%);
+  border: 1px solid #009799;
+  
+  color: black;
+  margin: 10px 10px;
+}
+
+.projectImage {
+  display: flex;
+  border-radius: 50%;
+  z-index: 50;
+  max-height: 40px;
+  max-width: auto;
+}
+.imageWrapper {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 0 20px;
+}
+
+.text {
+  padding: 0;
+  margin: 0 10px 10px 10px;
+}
+
+.textWrap {
+  flex: 1  1 auto;
+}
+
+.buttonWrapper {
+  width: 100%;
+  border: 1px solid #009799;
+
+  box-shadow: inset 1px 1px 2px 2px rgba(0, 151, 153, 0.3), inset -1px -1px 2px 2px rgba(0, 151, 153, 0.3);
+  padding:  10px 8px 2px 8px;
+  background-color: white;
+}
+
+.showMore {
+  border-radius: 4px;
+  border: none;
+  background-color: #009799;
+  border: 2px solid #007977;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 2px rgba(0, 51, 51, 0.3);
+  padding: 10px;
+  font-size: 1em;
+}
+
+
+
+/*Animations*/
+/*@keyframes pulse {
+  0% {
+    border-image: linear-gradient(45deg, 009799, #009799, white, #009799, #009799) 1;
+  }
+  25% {
+    border-image: linear-gradient(45deg, #009799, white, #009799, white, #009799,) 1;
+  }
+  50% {
+    border-image: linear-gradient(45deg,  white, #009799, #009799,  #009799, white) 1;
+  }
+  75% {
+    border-image: linear-gradient(45deg,  #009799, white, #009799, white,  #009799) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, #009799, #009799, white, #009799, #009799) 1;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .section {
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 370px){
+  .section {
+    margin: 0 auto;
+  }
+}
+*/
