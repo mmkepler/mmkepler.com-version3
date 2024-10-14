@@ -13,6 +13,10 @@
   box-shadow: 3px -1px 6px #009799, -3px 1px 6px #009799;
 }
 
+section .section:nth-last-of-type(1) {
+  padding: 0;
+}
+
 .title {
   font-size: 2em;
 }

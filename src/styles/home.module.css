@@ -1,0 +1,101 @@
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.landing {
+  width: 60vw;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+/*Contact specific rules*/
+.space {
+  background: url("../images/starBG.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.emailInput, .nameInput, .messageInput {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 2px solid #009799;
+}
+
+.submit {
+  height: 36px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #009799;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  box-shadow: 1px 1px 3px #003333, -1px -1px 3px #003333;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
