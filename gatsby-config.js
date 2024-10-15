@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
 module.exports = {
   siteMetadata: {
     title: `mmkepler.com-1.0.0`,

@@ -13,8 +13,9 @@ import Skills from "../components/Skills"
 import Success from "../components/Success"
 import { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import * as emailjs from "emailjs"
-import planets from "../images/planets.png"
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+//import planets from "../images/planets.png"
 
 
 const IndexPage = () => {
@@ -30,6 +31,8 @@ const IndexPage = () => {
   let initialProject = {one: true, two: false, three: false};
   let [showProjects, setProjects] = useState(initialProject);
   // console.log("Show projects", showProjects);
+  
+   
 
   //toggle Projects
   const toggleProjects = (e) => {
@@ -57,22 +60,24 @@ const IndexPage = () => {
   //handle form change
   const handleChange = (e) => {
     e.preventDefault();
-    let {target} = e.target;
+    //console.log("event?", e);
+    let {target} = e;
     let {name, value} = target;
     setFormState({...formState, [name]: value});
   }
 
   //submit contact form
-  
+  const form = useRef();
   const submitForm = (event) => {
     event.preventDefault();
     const templateId = process.env.GATSBY_API_TEMPLATE_ID;
     const userId = process.env.GATSBY_API_USER_ID;
     const serviceId = process.env.GATSBY_API_SERVICE_ID;
     let formInfo = {from_name: formState.nameInput, from_email: formState.emailInput, message: formState.messageInput, reply_to: formState.emailInput};
-
-    /*emailjs.send(
-      serviceId, templateId, formInfo, userId)
+    console.log("email info:", templateId, serviceId, templateId);
+    
+    emailjs.send(
+      serviceId, templateId, formInfo, {publicKey: userId})
       .then(() => {
         console.log("worked")
         setSuccess({show: true})
@@ -83,7 +88,7 @@ const IndexPage = () => {
         console.log("err", err);
         setShowForm({show: false});
         setFailure({show:true})
-      });*/
+      });
   }
       
   
@@ -107,7 +112,7 @@ const IndexPage = () => {
             <div className={sectionStyles.spacer}>
             { showForm.show && <p>Send a message to my planet!</p>}
             </div>
-            <StaticImage src={planets} alt="image of a teal planet with 3 orbiting moons."/>
+            <StaticImage src="../images/planets.png" alt="image of a teal planet with 3 orbiting moons."/>
           <div>
             {success.show && <Success />}
             {failure.show && <Failure />}
@@ -115,6 +120,7 @@ const IndexPage = () => {
           <form 
             className={styles.form} id="form"
             onSubmit={(event) => submitForm(event)}
+            ref={form}
           >
             <label htmlFor="nameInput">
               Name:
