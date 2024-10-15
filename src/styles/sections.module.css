@@ -7,7 +7,7 @@
   padding: 40px 40px;
   margin: 0 auto 20px auto;
   border: 4px solid #009799;
-  border-image: linear-gradient(45deg, #009799, white, #009799) 1;
+  //border-image: linear-gradient(45deg, #009799, white, #009799) 1;
   /*animation: pulse 4s ease infinite alternate;*/
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 3px -1px 6px #009799, -3px 1px 6px #009799;

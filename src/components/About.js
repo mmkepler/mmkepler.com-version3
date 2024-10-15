@@ -54,6 +54,7 @@ export default function About() {
           </a>
         </div>
       </div>
+      <br/>
 
       {/* prof Links */}
       <div className={aboutStyles.profLinks} >
@@ -84,7 +85,6 @@ export default function About() {
             </div>
           </a>
         </div>
-
       </div>
 
       <h3 tabIndex="0">Educational Certificates</h3>
@@ -102,19 +102,19 @@ export default function About() {
           Wes Bos Advanced React & GraphQL Course
         </a>
       </div>
-
+   
       {/*Prof Links End */}
 
       <h3 tabIndex="0">Free Code Camp Certifications Links</h3>
       <div className={aboutStyles.fcc}>
         
-      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/missarachnid/responsive-web-design" target="_blank" rel="noreferrer">
+      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/mmkepler/responsive-web-design" target="_blank" rel="noreferrer">
         Responsive Web Design
       </a>
-      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/missarachnid/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">
+      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/mmkepler/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">
         JS Algorithms and Data Structures
       </a>
-      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/missarachnid/back-end-development-and-apis" target="_blank" rel="noreferrer">
+      <a className={aboutStyles.links} href="https://www.freecodecamp.org/certification/mmkepler/back-end-development-and-apis" target="_blank" rel="noreferrer">
         Back End Development &amp; APIs
       </a>
       </div>

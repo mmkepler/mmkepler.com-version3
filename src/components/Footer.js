@@ -11,7 +11,7 @@ export default function Footer() {
       <p className={footerStyles.copyright}>
       ©  {year} Melissa Kepler
       </p>
-      <div className="socialIconsFooter">
+      <div className={footerStyles.socialIconsFooter}>
         <span>
           <a href="https://github.com/mmkepler" target="_blank" rel="noopener noreferrer">
             <StaticImage className={footerStyles.socialIcon} id="github" src="../images/github-mark-white.png" alt="Github Octocat icon"/>

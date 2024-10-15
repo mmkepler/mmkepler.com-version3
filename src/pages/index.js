@@ -110,9 +110,9 @@ const IndexPage = () => {
         <div className={sectionStyles.section} >
             <div className={styles.space}>
             <div className={sectionStyles.spacer}>
-            { showForm.show && <p>Send a message to my planet!</p>}
+            { showForm.show && <p className={styles.sendMessage}>Send a message to my planet!</p>}
             </div>
-            <StaticImage src="../images/planets.png" alt="image of a teal planet with 3 orbiting moons."/>
+            <StaticImage className={styles.planets} src="../images/planets.png" alt="image of a teal planet with 3 orbiting moons."/>
           <div>
             {success.show && <Success />}
             {failure.show && <Failure />}

@@ -95,6 +95,14 @@
   border-radius: 4px;
 }
 
+.planets {
+  height: 100px;
+  width: 100px;
+}
+
+.sendMessage {
+  font-size: 1.3rem;
+}
 
 @media (max-width: 600px) {
   .grid {
