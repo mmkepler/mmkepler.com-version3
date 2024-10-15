@@ -13,16 +13,19 @@ export default function Footer() {
       </p>
       <div className="socialIconsFooter">
         <span>
-          <StaticImage className={footerStyles.socialIcon} id="github" src="../images/github-mark-white.png" alt="Github Octocat icon"/>
+          <a href="https://github.com/mmkepler" target="_blank" rel="noopener noreferrer">
+            <StaticImage className={footerStyles.socialIcon} id="github" src="../images/github-mark-white.png" alt="Github Octocat icon"/>
+          </a>
         </span>
         <span>
-          <StaticImage className={footerStyles.socialIcon} id="bluesky" src="../images/bluesky_media_kit_logo_3.png" alt="bluesky social icon of a blue butterfly"/>
+          <a href="https://bsky.app/profile/mmkepler.bsky.social" target="_blank" rel="noopener noreferrer">
+            <StaticImage className={footerStyles.socialIcon} id="bluesky" src="../images/bluesky_media_kit_logo_3.png" alt="bluesky social icon of a blue butterfly"/>
+          </a>
         </span>
         <span>
-          <StaticImage className={footerStyles.socialIcon} id="threads" src="../images/threads-logo-white-01.png" alt="Threads icon in the shape of an at symbol"/>
-        </span>
-        <span>
-          <StaticImage className={footerStyles.socialIcon} id="linkedin" src="../images/LI-In-Bug.png" alt="Linkedin logo"/>
+          <a href="https://www.linkedin.com/in/mmkepler/" target="_blank" rel="noopener noreferrer">
+            <StaticImage className={footerStyles.socialIcon} id="linkedin" src="../images/LI-In-Bug.png" alt="Linkedin logo"/>
+          </a>
         </span>
       </div>
     </footer>
