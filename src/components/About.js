@@ -46,7 +46,7 @@ export default function About() {
           <p tabIndex="0">Although I included links, I don&apos;t spend much time on social media. Frankly I would rather just have tweets from birds.</p>
         </div>
         <div className={aboutStyles.resume}>
-          <a href="/melissa_Kepler_resume.pdf" target="_blank" rel="noreferrer">
+          <a href="/resume" target="_blank" rel="noreferrer">
           <p className={aboutStyles.resumeHolder}>Check out my resume here : &nbsp; 
             <StaticImage src="../images/resume.png"
             className={`${aboutStyles.logos} ${aboutStyles.resumeIcon}`} alt="icon of a resume"/> 
