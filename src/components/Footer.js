@@ -1,5 +1,4 @@
 import React from 'react'
-//import "../styles/footer.css"
 import * as footerStyles from "../styles/footer.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 

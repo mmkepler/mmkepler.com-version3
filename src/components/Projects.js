@@ -1,9 +1,10 @@
 import React from 'react'
 import  * as sectionStyles from "../styles/sections.module.css"
+import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
 import projectData from "../data/data"
 import projectData2 from "../data/data2"
 import projectData3 from "../data/data3"
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
+
 
 export default function Projects(props) {
   return (

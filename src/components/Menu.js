@@ -2,6 +2,7 @@ import React from 'react'
 import * as menuStyles from "../styles/menu.module.css"
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll"
 
+
 export default function Menu(props) {
   return(
     <div id="menu" className={menuStyles.menu}>

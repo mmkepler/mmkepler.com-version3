@@ -1,21 +1,23 @@
 import * as React from "react"
-import * as styles from "../styles/home.module.css"
 import * as sectionStyles from "../styles/sections.module.css"
+import * as styles from "../styles/home.module.css"
+import emailjs from '@emailjs/browser'; 
+import About from "../components/About"
 import Menu from "../components/Menu"
 import Layout from "../components/Layout"
-import About from "../components/About"
 import Failure from "../components/Failure"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Landing from "../components/Landing"
 import Projects from "../components/Projects"
+
 import Skills from "../components/Skills"
-import Success from "../components/Success"
-import { useState } from "react"
+
 import { StaticImage } from "gatsby-plugin-image"
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-//import planets from "../images/planets.png"
+import Success from "../components/Success"
+import { useState, useRef } from "react"
+
+
 
 
 const IndexPage = () => {
@@ -101,7 +103,7 @@ const IndexPage = () => {
         <About/>
         <Skills/>
         <Projects onClick={(e) => toggleProjects(e)} shown={showProjects}/>
-        <section id="contact" className={styles.contact}
+        <section id="contact"
           name="contact">
          <div className={sectionStyles.holder}>
         <span className={sectionStyles.spanleft}></span><h2 className={sectionStyles.title}>Contact</h2><span className={sectionStyles.spanright}></span>
@@ -109,7 +111,7 @@ const IndexPage = () => {
         <div className={sectionStyles.contactWrapper}>
         <div className={sectionStyles.section} >
             <div className={styles.space}>
-            <div className={sectionStyles.spacer}>
+            <div /*className={sectionStyles.spacer}*/>
             { showForm.show && <p className={styles.sendMessage}>Send a message to my planet!</p>}
             </div>
             <StaticImage className={styles.planets} src="../images/planets.png" alt="image of a teal planet with 3 orbiting moons."/>
@@ -118,7 +120,7 @@ const IndexPage = () => {
             {failure.show && <Failure />}
             { showForm.show && 
           <form 
-            className={styles.form} id="form"
+             id="form"
             onSubmit={(event) => submitForm(event)}
             ref={form}
           >
