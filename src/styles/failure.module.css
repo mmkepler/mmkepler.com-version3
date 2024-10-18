@@ -1,3 +1,33 @@
 .failure {
+  font-size: 26px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.warning {
+  font-size: 40px;
+  text-shadow: red 10px 10px 20px, red -10px 10px 20px, red 10px -10px 20px, red -10px -10px 20px;
+  animation: alert 4s ease infinite alternate;
+}
+
+/*Animations*/
+@keyframes alert {
+  0% {
+    text-shadow: red 10px 10px 20px, red -10px 10px 20px, red 10px -10px 20px, red -10px -10px 20px;
+  }
+  25% {
+    text-shadow: red 4px 4px 10px, red -4px 4px 10px, red 4px -4px 10px, red -4px -4px 10px;
+  
+  }
+  50% {
+    text-shadow: red 10px 10px 20px, red -10px 10px 20px, red 10px -10px 20px, red -10px -10px 20px;
+  }
+  
+  75% {
+    text-shadow: red 4px 4px 10px, red -4px 4px 10px, red 4px -4px 10px, red -4px -4px 10px;
+  }
+  100% {
+    text-shadow: red 10px 10px 20px, red -10px 10px 20px, red 10px -10px 20px, red -10px -10px 20px;
+  }
   
 }
