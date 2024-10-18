@@ -5,7 +5,8 @@ export default function
 () {
   return (
     <div id="success" className={successStyles.success}>
-      success
+      <p className={successStyles.title}>Success!</p>
+      Your message has been sent.
     </div>
   )
 }

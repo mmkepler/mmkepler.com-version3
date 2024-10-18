@@ -10,11 +10,9 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Landing from "../components/Landing"
 import Projects from "../components/Projects"
-
 import Skills from "../components/Skills"
-
-import { StaticImage } from "gatsby-plugin-image"
 import Success from "../components/Success"
+import { StaticImage } from "gatsby-plugin-image"
 import { useState, useRef } from "react"
 
 
@@ -186,6 +184,7 @@ const IndexPage = () => {
             </button>
           </form>
            }
+
           </div>
           </div>
         </div>
