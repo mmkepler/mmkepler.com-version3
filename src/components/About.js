@@ -31,7 +31,7 @@ export default function About() {
              In 2018 I won a Grow with Google scholarship and earned Udacity&apos;s Mobile Web Specialist Nanodegree.
               A lot of my learning has been through project creation. &nbsp;
               <br/>
-              <a href="https://github.com/Missarachnid" target="_blank" rel="noreferrer" id={aboutStyles.gitLink}>My GitHub is full of projects, please take a look!</a>
+              <a href="https://github.com/mmkepler" target="_blank" rel="noreferrer" id={aboutStyles.gitLink}>My GitHub is full of projects, please take a look!</a>
           </p>
           <p tabIndex="0"><strong>The dreaded resume gap!</strong> - Just as I was going to make my career jump into programming, my fiance died from injuries caused by a car accident on our way to get married.
              I had to settle his estate while dealing with my PTSD, and I took time off to do this. During this time I started my own business and did some graphic and web work. I also worked on studying as well.
@@ -46,12 +46,12 @@ export default function About() {
           <p tabIndex="0">Although I included links, I don&apos;t spend much time on social media. Frankly I would rather just have tweets from birds.</p>
         </div>
         <div className={aboutStyles.resume}>
+        <div className={aboutStyles.resumeHolder}>Check out my resume here : &nbsp; 
           <a href="/resume" target="_blank" rel="noreferrer">
-          <p className={aboutStyles.resumeHolder}>Check out my resume here : &nbsp; 
             <StaticImage src="../images/resume.png"
             className={`${aboutStyles.logos} ${aboutStyles.resumeIcon}`} alt="icon of a resume"/> 
-          </p>
           </a>
+          </div>
         </div>
       </div>
       <br/>
