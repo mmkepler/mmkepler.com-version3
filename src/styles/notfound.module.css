@@ -12,6 +12,11 @@
   margin-top: 0;
 }
 
+li > .link {
+  color: white;
+  text-decoration: none;
+}
+
 /*Animations*/
 @keyframes pulse {
   0% {
