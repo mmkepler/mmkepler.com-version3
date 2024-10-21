@@ -4,22 +4,25 @@
 
 module.exports = {
   siteMetadata: {
-    title: `mmkepler.com-1.0.0`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "Melissa Kepler | React Developer",
+    description: "Melissa Kepler's coding portfolio",
+    image: "/mmkepler_icon.pgn",
+    siteUrl: "https://www.mmkepler.com",
   },
   plugins: ["gatsby-plugin-image", {
-    resolve: 'gatsby-plugin-manifest',
+    resolve: "gatsby-plugin-manifest",
     options: {
       "icon": "src/images/icon.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
+    resolve: "gatsby-source-filesystem",
     options: {
       "name": "images",
       "path": "./src/images/"
     },
     __key: "images"
-  }],
+  },
+],
   
 };
 

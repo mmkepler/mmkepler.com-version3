@@ -12,13 +12,16 @@ import Landing from "../components/Landing"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 import Success from "../components/Success"
+import { SEO } from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import { useState, useRef } from "react"
 
 
 
 
-const IndexPage = () => {
+
+
+  const IndexPage = () => {
   const [menuState, setMenuState] = useState(false);
   const initialState = {nameInput: "", emailInput: "", messageInput: ""};
   const [formState, setFormState] = useState(initialState);
@@ -199,4 +202,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Melissa Kepler</title>
+export const Head = () => (<SEO/>);
