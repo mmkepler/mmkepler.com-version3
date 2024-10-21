@@ -18,7 +18,6 @@ export default function Projects(props) {
       <div className={sectionStyles.cardSpacer} >
 
         {projectData.map(function(el, index){
-          console.log(el.image)
           return (
             
           <div className={sectionStyles.card} key={index}>

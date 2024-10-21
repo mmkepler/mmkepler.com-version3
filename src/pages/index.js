@@ -3,18 +3,19 @@ import * as sectionStyles from "../styles/sections.module.css"
 import * as styles from "../styles/home.module.css"
 import emailjs from '@emailjs/browser'; 
 import About from "../components/About"
-import Menu from "../components/Menu"
-import Layout from "../components/Layout"
 import Failure from "../components/Failure"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Landing from "../components/Landing"
+import Layout from "../components/Layout"
+import Menu from "../components/Menu"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 import Success from "../components/Success"
-import { SEO } from "../components/seo"
+import Seo from "../components/Seo";
 import { StaticImage } from "gatsby-plugin-image"
 import { useState, useRef } from "react"
+
 
 
 
@@ -33,7 +34,6 @@ import { useState, useRef } from "react"
   let [showForm, setShowForm] = useState(initialShowForm);
   let initialProject = {one: true, two: false, three: false};
   let [showProjects, setProjects] = useState(initialProject);
-  // console.log("Show projects", showProjects);
   
    
 
@@ -54,7 +54,6 @@ import { useState, useRef } from "react"
   const toggleMenu = (e) => {
     e.preventDefault();
     let buttonMenu = document.getElementsByClassName("item");
-    // console.log("toggle", buttonMenu);
     buttonMenu.ariaExpanded = !menuState;
     setMenuState(!menuState);
   }
@@ -63,7 +62,6 @@ import { useState, useRef } from "react"
   //handle form change
   const handleChange = (e) => {
     e.preventDefault();
-    //console.log("event?", e);
     let {target} = e;
     let {name, value} = target;
     setFormState({...formState, [name]: value});
@@ -77,7 +75,6 @@ import { useState, useRef } from "react"
     const userId = process.env.GATSBY_API_USER_ID;
     const serviceId = process.env.GATSBY_API_SERVICE_ID;
     let formInfo = {from_name: formState.nameInput, from_email: formState.emailInput, message: formState.messageInput, reply_to: formState.emailInput};
-    console.log("email info:", templateId, serviceId, templateId);
     
     emailjs.send(
       serviceId, templateId, formInfo, {publicKey: userId})
@@ -202,4 +199,4 @@ import { useState, useRef } from "react"
 
 export default IndexPage
 
-export const Head = () => (<SEO/>);
+export const Head = () => (<Seo/>);
