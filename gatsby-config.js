@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "Melissa Kepler | React Developer",
     description: "Melissa Kepler's coding portfolio",
-    image: "/mmkepler_icon.pgn",
+    image: "/mmkepler_icon.png",
     siteUrl: "https://www.mmkepler.com",
   },
   plugins: ["gatsby-plugin-image", {
@@ -21,6 +21,18 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  },
+  {
+    resolve:"gatsby-plugin-manifest",
+    options: {
+      name: "Melissa Kepler",
+      short_name: "MK",
+      start_url: "/",
+      background_color: "#fff",
+      theme_color: "#009799",
+      display: "standalone",
+      icon: "src/images/logo2.png"
+    },
   },
   
 ],
