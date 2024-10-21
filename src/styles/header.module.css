@@ -46,6 +46,11 @@
   list-style-type: none;
 }
 
+.scroll {
+  text-decoration: none;
+  color: white;
+}
+
 .items:nth-child(1) {
  padding-top: 0;
 }
