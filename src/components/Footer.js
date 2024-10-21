@@ -23,7 +23,7 @@ export default function Footer() {
         </span>
         <span>
           <a href="https://www.linkedin.com/in/mmkepler/" target="_blank" rel="noopener noreferrer">
-            <StaticImage className={footerStyles.socialIcon} id="linkedin" src="../images/LI-In-Bug.png" alt="Linkedin logo"/>
+            <StaticImage className={footerStyles.socialIcon} id="linkedin" src="../images/linked.png" alt="Linkedin logo"/>
           </a>
         </span>
       </div>
