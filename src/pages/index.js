@@ -18,10 +18,6 @@ import { useState, useRef } from "react"
 
 
 
-
-
-
-
   const IndexPage = () => {
   const [menuState, setMenuState] = useState(false);
   const initialState = {nameInput: "", emailInput: "", messageInput: ""};
@@ -51,12 +47,14 @@ import { useState, useRef } from "react"
   }
 
   //toggle hamburger menu
-  const toggleMenu = (e) => {
-    e.preventDefault();
+  const toggleMenu = () => {
+    
     let buttonMenu = document.getElementsByClassName("item");
-    buttonMenu.ariaExpanded = !menuState;
-    setMenuState(!menuState);
+    buttonMenu.ariaExpanded = !menuState
+    setMenuState(!menuState)
   }
+
+
 
   
   //handle form change
@@ -95,7 +93,7 @@ import { useState, useRef } from "react"
   return (
     <main id="main" className={styles.main} name="home">
       <Header onClick={(e) => toggleMenu(e)}/>
-      {menuState ? <Menu onClick={(e) => toggleMenu(e)} /> : ""}
+      {menuState ? <Menu onClick={toggleMenu} /> : ""}
       <Layout>
         <Landing/>
         <About/>
