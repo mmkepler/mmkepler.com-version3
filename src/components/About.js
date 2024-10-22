@@ -49,7 +49,7 @@ export default function About() {
         <div className={aboutStyles.resumeHolder}>Check out my resume here : &nbsp; 
           <a href="/resume" target="_blank" rel="noreferrer">
             <StaticImage src="../images/resume.png"
-            className={`${aboutStyles.logos} ${aboutStyles.resumeIcon}`} alt="icon of a resume"/> 
+            className={aboutStyles.resumeIcon} alt="icon of a resume"/> 
           </a>
           </div>
         </div>
@@ -61,16 +61,16 @@ export default function About() {
 
         <div className={aboutStyles.profSpacer}>
           <a className={aboutStyles.iconLink} href="https://www.linkedin.com/in/mmkepler/" target="_blank" rel="noreferrer"> 
-            Work History: 
+            <p>Work History: </p>
             <div className={aboutStyles.logos}>
-              <StaticImage src="../images/In-Black-34px-TM.png" alt="The LinkedIn logo." />
+              <StaticImage src="../images/linkedin.webp" alt="The LinkedIn logo." />
             </div>
             </a>
           </div>
         
         <div className={aboutStyles.profSpacer}>
-          <a className={aboutStyles.iconLink} href="https://github.com/Missarachnid" target="_blank" rel="noreferrer">
-            Coding Projects: 
+          <a className={aboutStyles.iconLink} href="https://github.com/mmkepler" target="_blank" rel="noreferrer">
+            <p>Coding Projects: </p>
             <div className={aboutStyles.logos}>
               <StaticImage src="../images/GitHub-Mark-32px.png" alt="The GitHub Octocat logo." />
             </div>
@@ -79,9 +79,9 @@ export default function About() {
 
         <div className={aboutStyles.profSpacer}>
           <a className={aboutStyles.iconLink} href="https://www.behance.net/mmkepler" target="_blank" rel="noreferrer">
-            Artistic Work: 
+            <p>Artistic Work: </p>
             <div className={aboutStyles.logos}>
-              <StaticImage className={aboutStyles.behance} src="../images/behance.svg" alt="The Behance logo."/>
+              <StaticImage className={aboutStyles.behance} src="../images/behance.webp" alt="The Behance logo."/>
             </div>
           </a>
         </div>
