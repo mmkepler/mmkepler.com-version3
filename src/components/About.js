@@ -15,7 +15,7 @@ export default function About() {
         {/*Main Bio Text Part */}
       <div className={aboutStyles.topSpacer}>
         <div className={aboutStyles.picWrapper}>
-          <StaticImage  className={aboutStyles.mypic} src="../images/me.png" alt="photo of Melissa Kepler photoshopped to look like it came from a space ship information display"/>
+          <StaticImage  className={aboutStyles.mypic} src="../images/me_comp.webp" alt="photo of Melissa Kepler photoshopped to look like it came from a space ship information display"/>
           </div>
           <h3 tabIndex="0">Greetings Earthlings!</h3>
         <div className={aboutStyles.textWrapper}>

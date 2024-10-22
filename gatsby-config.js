@@ -31,10 +31,15 @@ module.exports = {
       background_color: "#fff",
       theme_color: "#009799",
       display: "standalone",
-      icon: "src/images/logo2.png"
+      icon: "src/images/logo2_comp.webp"
     },
   },
-  
+  {
+    resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+    options: {
+      devMode: true,
+    },
+  },
 ],
   
 };

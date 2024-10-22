@@ -10,8 +10,6 @@
   left: 0;
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  /*border-image: linear-gradient(45deg, #009799, white, #009799) 1;*/
-  /*animation: pulse 4s ease infinite alternate;*/
   color: white;
   line-height: normal;
 }
@@ -107,22 +105,3 @@
     flex-direction: column;
   }
 }
-
-/*
-@keyframes pulse {
-  0% {
-    border-image: linear-gradient(45deg, 009799, #009799, white, #009799, #009799) 1;
-  }
-  25% {
-    border-image: linear-gradient(45deg, #009799, white, #009799, white, #009799,) 1;
-  }
-  50% {
-    border-image: linear-gradient(45deg,  white, #009799, #009799,  #009799, white) 1;
-  }
-  75% {
-    border-image: linear-gradient(45deg,  #009799, white, #009799, white,  #009799) 1;
-  }
-  100% {
-    border-image: linear-gradient(45deg, #009799, #009799, white, #009799, #009799) 1;
-  }
-}*/

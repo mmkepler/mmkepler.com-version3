@@ -29,6 +29,7 @@
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "dotenv": "^16.4.5",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.32",
     "globals": "^15.11.0"
   }
 }
