@@ -1,4 +1,4 @@
-import puplanta from "../images/projects/corgi4.png";
+import puplanta from "../images/projects/corgi4.webp";
 import weather2 from "../images/projects/weather3.png";
 import zap from "../images/projects/zap.jpg";
 import simon from "../images/projects/simon.jpg";

@@ -60,11 +60,11 @@ export default function Projects(props) {
             <div className={sectionStyles.cardMenu}>
               
               {el.webLink === "none" ? '' :
-            <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
+            <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer" loading="lazy">
                 <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
         }
-              <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+              <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer" loading="lazy">
                 <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
               </a>
             </div>
@@ -90,10 +90,10 @@ export default function Projects(props) {
             </div>
             <div className={sectionStyles.cardMenu}>
               
-            <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
+            <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer" loading="lazy">
             <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
-              <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+              <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer" loading="lazy">
                 <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
               </a>
             </div>

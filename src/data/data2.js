@@ -1,7 +1,7 @@
-import exercise from "../images/projects/exercise.jpg";
-import abstract from "../images/projects/image-ab.jpg";
+import exercise from "../images/projects/exercise.webp";
+import abstract from "../images/projects/image-ab.webp";
 import pomodoro from "../images/projects/pomo.jpg";
-import mmkepler from "../images/newestlogo2.png";
+import mmkepler from "../images/projects_logo.webp";
 import shortener from "../images/projects/shortener.jpg";
 import tetris from "../images/projects/tetris.jpg";
 

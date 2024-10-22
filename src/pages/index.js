@@ -110,7 +110,7 @@ import { useState, useRef } from "react"
             <div /*className={sectionStyles.spacer}*/>
             { showForm.show && <p className={styles.sendMessage}>Send a message to my planet!</p>}
             </div>
-            <StaticImage className={styles.planets} src="../images/planets.png" alt="image of a teal planet with 3 orbiting moons."/>
+            <StaticImage className={styles.planets} src="../images/planet_comp.webp" alt="image of a teal planet with 3 orbiting moons."/>
           <div>
             {success.show && <Success />}
             {failure.show && <Failure />}

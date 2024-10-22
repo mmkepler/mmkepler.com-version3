@@ -38,10 +38,9 @@
   width: 70px;
   font-size: 1.2em;
   padding-top: 10px;
-  background: url("../images/logo2.png") center center;
+  background: url("../images/logo2_comp.webp") center center;
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: 2;
   text-shadow: 1px 1px 2px black, -1px -1px 2px black;
   list-style-type: none;
 }
