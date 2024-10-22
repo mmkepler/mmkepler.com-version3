@@ -34,7 +34,7 @@ export default function Projects(props) {
                 <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
+                <StaticImage src="../images/GitHub-Mark-32px.png" alt="The GitHub Octocat logo"/>
               </a>
             </div>
             </div>
@@ -65,7 +65,7 @@ export default function Projects(props) {
               </a>
         }
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer" loading="lazy">
-                <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
+                <StaticImage src="../images/GitHub-Mark-32px.png" alt="The GitHub Octocat logo"/>
               </a>
             </div>
             </div>
@@ -94,7 +94,7 @@ export default function Projects(props) {
             <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer" loading="lazy">
-                <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
+                <StaticImage src="../images/GitHub-Mark-32px.png" alt="The GitHub Octocat logo"/>
               </a>
             </div>
             </div>
