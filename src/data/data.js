@@ -1,5 +1,5 @@
-import puplanta from "../images/projects/georgia-corgi.svg";
-import weather2 from "../images/projects/weather2.png";
+import puplanta from "../images/projects/corgi4.png";
+import weather2 from "../images/projects/weather3.png";
 import zap from "../images/projects/zap.jpg";
 import simon from "../images/projects/simon.jpg";
 import tictactoe from "../images/projects/tictactoe.jpg";

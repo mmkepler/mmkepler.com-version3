@@ -1,6 +1,6 @@
 import React from 'react'
 import  * as sectionStyles from "../styles/sections.module.css"
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import projectData from "../data/data"
 import projectData2 from "../data/data2"
 import projectData3 from "../data/data3"
@@ -31,7 +31,7 @@ export default function Projects(props) {
             <div className={sectionStyles.cardMenu}>
               
               <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/202-sphere.svg" alt="" />
+                <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
@@ -61,7 +61,7 @@ export default function Projects(props) {
               
               {el.webLink === "none" ? '' :
             <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/202-sphere.svg" alt="" />
+                <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
         }
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
@@ -91,7 +91,7 @@ export default function Projects(props) {
             <div className={sectionStyles.cardMenu}>
               
             <a href={el.webLink} className={sectionStyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/202-sphere.svg" alt="" />
+            <StaticImage className={sectionStyles.web} src="../images/web1.png" alt="An image to represent a website" />
               </a>
               <a href={el.gitLink} className={sectionStyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/GitHub-Mark-32px.png" alt=""/>
