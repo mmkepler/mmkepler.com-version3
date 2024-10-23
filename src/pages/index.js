@@ -91,7 +91,7 @@ import { useState, useRef } from "react"
       
   
   return (
-    <main id="main" className={styles.main} name="home">
+    <main id="main" className={styles.main}>
       <Header onClick={(e) => toggleMenu(e)}/>
       {menuState ? <Menu onClick={toggleMenu} /> : ""}
       <Layout>

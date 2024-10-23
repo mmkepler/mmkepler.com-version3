@@ -1,0 +1,34 @@
+.nav {
+  padding: 10px 40px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: black;
+  box-shadow: -1px 2px 5px #009799;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  color: white;
+  line-height: normal;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.items {
+  width: 70px;
+  font-size: 1.2em;
+  padding-top: 10px;
+  background: url("../images/logo2_comp.webp") center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  list-style-type: none;
+}
